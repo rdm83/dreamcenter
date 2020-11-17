@@ -1,0 +1,261 @@
+:root {
+    --background: #2F649A;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background: #EFEBE5;
+    color: #EFEBE5;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+  }
+
+  
+/* Header Bar*/
+  header {
+    background: var(--background);
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .top-logo {
+    margin: 0;
+    padding: 15px;
+    width: 270px;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+  nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: var(--background);
+    width: 100%;
+    
+    transform: scale(1,0);
+    transform-origin: top;
+    transition: transform 500ms ease-out;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+  }
+  nav a {
+    color: #EFEBE5;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 200ms ease-out;
+    
+  }
+
+  .nav-toggle:checked ~ nav {
+    transform: scale(1,1);
+    
+  }
+
+  .nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 300ms ease-out 400ms;
+  }
+
+  nav a:hover {
+    color: #B2CDEA;
+  }
+  
+  .nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: #EFEBE5;
+  height: 3px;
+  width: 2em;
+  border-radius: 10px;
+  position: relative;
+}
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+
+  content: "";
+
+}
+
+.nav-toggle-label span::before {
+  
+  bottom: 9px;
+}
+
+
+.nav-toggle-label span::after {
+  
+  top: 6px;
+}
+ 
+@media screen and (min-width: 1400px){
+    .nav-toggle-label {
+      display: none;
+    }
+    
+    header{
+      display: grid;
+      grid-template-columns: 1fr auto minmax(600px, 3fr);
+      padding: 0 8% 0 4%;
+    }
+    
+    .top-logo {
+      grid-column: 2/3;
+    }
+    
+    nav {
+      all:unset;
+      grid-column: 3/4;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    
+    nav ul{
+      display: flex;
+    }
+    
+    nav li {
+      margin-left: 3em;
+      margin-bottom: 0;
+    }
+    
+    nav a {
+      opacity: 1;
+      position: relative;
+    }
+    nav a::before {
+      content:"";
+      display: block;
+      height: 3px;
+      background: #B2CDEA;
+      position: absolute;
+      border-radius: 10px;
+      top: -.5em;
+      left: 0;
+      right: 0;
+      transform: scale(0,1);
+      transform-origin: left;
+      transition: transform ease-in-out 250ms;
+    }
+    
+    nav a:hover::before {
+      transform: scale(1,1);
+    }
+  }
+  /*End of Header Bar */
+
+/*Hero Image*/
+
+.hero-image {
+  height: 100vh;
+  background-image: url("../images/hero1.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero1{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+
+}
+
+/*Hero Text*/
+
+.hero-text{
+  width:100%;
+  padding: 0 400px;
+  margin-bottom: 70px;
+  text-align: center;
+  line-height: 1.7em;
+  z-index: 5;
+  text-shadow: 2px 2px 6px black ;
+}
+/* Button */
+.donate-button{
+  font-size: 1.2em;
+  color: #EFEBE5;
+  background: #50A2F5;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+}
+
+/*Skyline*/
+
+.skyline{
+  height: 100vh;
+  background-image: url("../images/philly_skyline_blue.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.our-mission{
+  width:100%;
+  padding: 0 300px;
+  text-align: center;
+  text-shadow: 2px 2px 6px black ;
+}
+
+.skyline-text{
+  width:100%;
+  padding: 0 400px; 
+  text-align: center;
+  line-height: 1.7em;
+  text-shadow: 2px 2px 6px black ;
+}
+
+/*Card Section*/
+
+.card-section{
+  display: flex;
+  align-items: flex;
+  flex-direction: row;
+}
+
+.cards{
+  margin: 100px 50px;
+  background: var(--background);
+  width: 70%;
+}
