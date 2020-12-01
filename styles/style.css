@@ -261,8 +261,31 @@
   flex-direction: row;
 }
 
-.card-image {
-  display: flex;
+.card-image1 {
+  background-image: url("../images/about_us.jpg");
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.card-image2 {
+  background-image: url("../images/get_involed_programs.jpg");
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.card-image3 {
+  background-image: url("../images/donate_contact.jpg");
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .about-content {
