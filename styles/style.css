@@ -255,16 +255,28 @@
 }
 
 .cards{
-  margin: 100px 70px;
+  margin: 100px auto;
   background: var(--background);
+  width: 80%;
+  height: 300px;
   display: flex;
-  flex-direction: row;
+}
+
+.cards-reverse{
+  margin: 100px auto;
+  background: var(--background);
+  width: 80%;
+  height: 300px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.card-image {
+width: 50%;
 }
 
 .card-image1 {
   background-image: url("../images/about_us.jpg");
-  width: 100%;
-  height: auto;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -272,8 +284,6 @@
 
 .card-image2 {
   background-image: url("../images/get_involed_programs.jpg");
-  width: 100%;
-  height: auto;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -281,27 +291,17 @@
 
 .card-image3 {
   background-image: url("../images/donate_contact.jpg");
-  width: 100%;
-  height: auto;
   background-repeat: no-repeat;
   background-size: cover;
 
 }
 
-.about-content {
+.card-content {
+  width: 50%;
   text-align: center;
   padding: 20px 30px;
 }
 
-.get-involved-content {
-  text-align: center;
-  padding: 20px 30px;
-}
-
-.donate-content {
-  text-align: center;
-  padding: 20px 30px;
-}
 
 
 /* Button */
