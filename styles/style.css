@@ -195,7 +195,57 @@
   width: 100%;
   height: 100%;
   background-size: cover;
+}
 
+.about-image {
+    height: 100vh;
+    background-image: url("../images/hero2.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .hero1{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.getinvoled-image {
+  height: 100vh;
+  background-image: url("../images/hero3.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero1{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.contact-image {
+  height: 100vh;
+  background-image: url("../images/hero4.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero1{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
 }
 
 /*Hero Text*/
@@ -304,7 +354,7 @@ width: 50%;
 
 
 
-/* Button */
+/* SEE MORE Button */
 .see-more-button{
   font-size: 0.8em;
   color: #EFEBE5;
@@ -316,7 +366,7 @@ width: 50%;
   margin-top: 20px;
 }
 
-
+/* Footer */
 footer {
 	width:100%;
 	padding:100px 0;
