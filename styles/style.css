@@ -324,11 +324,12 @@
 .card-image {
 width: 50%;
 }
-
+/* Home Page images */
 .card-image1 {
   background-image: url("../images/about_us.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  
 
 }
 
@@ -345,6 +346,27 @@ width: 50%;
   background-size: cover;
 
 }
+
+
+
+/* About Us Images */
+
+
+.about-cards{
+  margin: 100px auto;
+  background: var(--background);
+  width: 80%;
+  height: auto;
+  display: flex;
+}
+
+.people-image {
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
+  
+}
+
 
 .card-content {
   width: 50%;
