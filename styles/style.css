@@ -355,9 +355,10 @@ width: 50%;
 .about-cards{
   margin: 100px auto;
   background: var(--background);
-  width: 80%;
+  width: 70%;
   height: auto;
   display: flex;
+  border-radius: 145px 0 100px 0;
 }
 
 .people-image {
@@ -386,6 +387,140 @@ width: 50%;
   padding: 10px 20px;
   align-items: flex;
   margin-top: 20px;
+}
+
+
+/* Get Involved Cards */
+
+.get-involed-cards-section{
+  display: flex;
+  align-items: flex;
+  flex-direction: column;
+}
+
+.get-involed-cards{
+  margin: 100px auto;
+  background: var(--background);
+  width: 80%;
+  height: 300px;
+  display: flex;
+}
+
+.program-images{
+  width: 50%;
+}
+
+.program-image1 {
+  background-image: url("../images/adopt_a_block.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.program-image2 {
+  background-image: url("../images/food_distribution.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.program-image3 {
+  background-image: url("../images/shine.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.get-involed-card-content {
+  width: 50%;
+  text-align: center;
+  padding: 20px 30px;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+}
+
+
+/* Contact Form */
+
+.contact-form {
+  height: 100vh;
+  background-image: url("../images/philly_skyline_blue.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+    
+}
+
+
+
+form {
+  width: 500px;
+  background: #2F649A;
+  padding: 35px;
+  margin-top: 20vh /*vh stands for view height*/;
+  margin-bottom: 20vh;
+  box-shadow: color,black 0 0 4px;
+  
+}
+
+input{
+  width: 100%;
+  
+}
+
+.radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+textarea{
+  display: block;
+  max-height: 400px;
+  width: 100%;
+  overflow: hidden; 
+  
+}
+
+input, textarea{
+  outline: none;
+  border: none;
+  border: 1px solid #50A2F5;
+  margin: 10px;
+  font-size: 1em;
+  background-color: #2F649A;
+  
+  
+}
+
+
+input:focus, textarea:focus {
+  box-shadow: 0 0 4px;
+  background: #ddd;
+}
+
+::placeholder {
+  color: #B2CDEA;
+  font-size: 0.8em;
+  opacity: .25;
+}
+
+.submit-button{
+  display: block;
+  padding: 10px 30px;
+  outline: none;
+  border-radius: 25px;
+  margin: 20px auto;
+  border:none;
+  color: #EFEBE5;
+  background-color: #50A2F5;
+  
+}
+
+submit-button:hover {
+  background-color: #575757;
 }
 
 /* Footer */
