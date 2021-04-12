@@ -80,7 +80,7 @@
   }
 
   nav a:hover {
-    color: #B2CDEA;
+    color: #F0E0B4;
   }
   
   .nav-toggle-label {
@@ -97,7 +97,7 @@
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
   display: block;
-  background: #EFEBE5;
+  background: #F0E0B4;
   height: 3px;
   width: 2em;
   border-radius: 10px;
@@ -161,7 +161,7 @@
       content:"";
       display: block;
       height: 3px;
-      background: #B2CDEA;
+      background: #F0E0B4;
       position: absolute;
       border-radius: 10px;
       top: -.5em;
@@ -251,6 +251,7 @@
 /*Hero Text*/
 
 .hero-text{
+  font-size: 1.5em;
   width:100%;
   padding: 0 400px;
   margin-bottom: 70px;
@@ -380,8 +381,8 @@ width: 50%;
 /* SEE MORE Button */
 .see-more-button{
   font-size: 0.8em;
-  color: #EFEBE5;
-  background: #50A2F5;
+  color: var(--background);
+  background: #F0E0B4;
   border: none;
   border-radius: 25px;
   padding: 10px 20px;
@@ -487,10 +488,10 @@ textarea{
 input, textarea{
   outline: none;
   border: none;
-  border: 1px solid #50A2F5;
+  border: 1px solid #2F649A;
   margin: 10px;
   font-size: 1em;
-  background-color: #2F649A;
+  background-color: #EFEBE5;
   
   
 }
@@ -502,7 +503,7 @@ input:focus, textarea:focus {
 }
 
 ::placeholder {
-  color: #B2CDEA;
+  color: #2F649A;
   font-size: 0.8em;
   opacity: .25;
 }
@@ -514,8 +515,8 @@ input:focus, textarea:focus {
   border-radius: 25px;
   margin: 20px auto;
   border:none;
-  color: #EFEBE5;
-  background-color: #50A2F5;
+  color: #2F649A;
+  background-color: #EFEBE5;
   
 }
 
@@ -533,12 +534,12 @@ footer {
 }
 
 footer a:link {
-	color:#B2CDEA;
+	color:#F0E0B4;
 	text-decoration: none;
 }
 
 footer a:visited {
-	color:#B2CDEA;
+	color:#F0E0B4;
 	text-decoration: none;
 }
 footer a:hover {
@@ -565,5 +566,5 @@ footer a:active {
 .fa-facebook:hover,
 .fa-twitter:hover,
 .fa-instagram:hover {
-	color: #4392E0;
+	color: #F0E0B4;
 }
