@@ -458,16 +458,17 @@ width: 50%;
 
 form {
   width: 500px;
-  background: #fff;
+  background: #EFEBE5;
   padding: 35px;
   margin-top: 20vh /*vh stands for view height*/;
   margin-bottom: 20vh;
   box-shadow: color,black 0 0 4px;
-  
+  color: #2F649A;
 }
 
 input{
   width: 100%;
+  
   
 }
 
@@ -503,8 +504,9 @@ input:focus, textarea:focus {
 }
 
 ::placeholder {
-  color: #fff;
-  font-size: 0.8em;
+  color: #2F649A;
+  font-size: 0.85em;
+  font-family:'Open Sans', sans-serif;
   opacity: .25;
 }
 
@@ -515,8 +517,8 @@ input:focus, textarea:focus {
   border-radius: 25px;
   margin: 20px auto;
   border:none;
-  color: #2F649A;
-  background-color: #EFEBE5;
+  color: #EFEBE5;
+  background-color: #2F649A;
   
 }
 
