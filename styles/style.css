@@ -458,7 +458,7 @@ width: 50%;
 
 form {
   width: 500px;
-  background: #2F649A;
+  background: #fff;
   padding: 35px;
   margin-top: 20vh /*vh stands for view height*/;
   margin-bottom: 20vh;
@@ -503,7 +503,7 @@ input:focus, textarea:focus {
 }
 
 ::placeholder {
-  color: #2F649A;
+  color: #fff;
   font-size: 0.8em;
   opacity: .25;
 }
